@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/a8476d5a12.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home">ERA NEWS<i class="fa-solid fa-earth-asia"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <form class="example" action="action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="politics.html">Politics</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link"  href="#"> Sport
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Society</a>
+                </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-regular fa-user"></i></a>
+            <div class="dropdown-menu float-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="login.html">Log in</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Registration</a>
+            </div>
+        </li>
+        </ul>
+        </div>
+      </nav>
+ 
+
+      
+ 
+      <div class="row gx-5" id="news1">
+        <div class="col-md-6 mb-4">
+          <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light" >
+            <img src="https://novoetv.kz/wp-content/uploads/2022/04/%D0%B7%D0%B0%D1%82%D0%BE%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F.jpg" id = 'img' class="img-fluid"  style="padding-top:25px" onmouseover="fadein()"  onmouseout="fadeout()"> 
+          </div>
+        </div>
+
+  <div class="col-md-6 mb-3" style="padding: 15px;">
+    <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+    <h4><strong>Karaganda was flooded</strong></h4>
+    <p class="text-muted">
+      According to the mayor, all the shower receivers in the city are in working condition. And the flooding of the streets occurred due to a volley of rain and foliage, which clogged into the lattice covers of some shower channels.
+    </p>
+    <a href = "#"><button type = "button" id="btn1" class="btn btn-primary">Read more <i class="fa-solid fa-arrow-right" style="color:white;"></i></button></a>
+    <script>
+      let play = document.getElementById("btn1");
+
+      function playMusic() {
+      let audio = new Audio("click.mp3");
+      audio.play();
+
+      audio.onended = function () {
+      window.location.href = "read1.html";
+      };
+      }
+
+      play.addEventListener("click", playMusic);
+    </script> 
+  </div>
+</div>
+
+<div class="row gx-5" id="news2">
+  <div class="col-md-6 mb-4">
+    <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light" >
+      <img src="https://mf.b37mrtl.ru/files/2023.09/xxl/651591b385f5405c3d12938e.jpg" class="img-fluid"  style="padding-top:25px" id='img2' onmouseover="fadein2()"  onmouseout="fadeout2()">
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-3" style="padding: 15px;">
+    <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+    <h4><strong>The Indian art market is booming: Will New Delhi become a global auction capital?</strong></h4>
+    <p class="text-muted">
+      Following record-breaking sales of pieces by Amrita Sher-Gil and Sayed Haider Raza, Indian art is benefitting from a soaring auction market, more museums and commercial galleries, and global recognition
+    </p>
+    <a href="#"><button type="button" id="btn2" class="btn btn-primary">Read more <i class="fa-solid fa-arrow-right" style="color:white;"></i></button></a>
+
+    <script>
+      let play2 = document.getElementById("btn2");
+
+      function playMusic() {
+        let audio = new Audio("click.mp3");
+        audio.play();
+
+        audio.onended = function () {
+          window.location.href = "read1.html";
+        };
+      }
+
+      play2.addEventListener("click", playMusic);
+    </script>
+
+  </div>
+</div>
+    
+              
+<footer>
+  <p>&copy; 2023 News Website "ERA NEWS"</p>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/d3js/7.8.5/d3.min.js"></script>
+<script src="index.js" charset="UTF-8"></script>
+</body>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
